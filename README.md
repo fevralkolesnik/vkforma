@@ -3,7 +3,7 @@
 ### Описание
 
 Форма была разработана для прохождения в следующий этап отбора на стажировку VK!
-* [Посмотрите форму по ссылке на gh-pages!](https://fevralkolesnik.github.io/react-mesto-auth/)
+* [Посмотрите форму по ссылке на gh-pages!](https://fevralkolesnik.github.io/vkforma/)
 
 ### Функционал
 
