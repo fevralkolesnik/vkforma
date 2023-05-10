@@ -147,7 +147,7 @@ function App() {
             Очистить форму
           </button>
         </form>
-        <p className={`message ${isOpen ? "message_opened" : ""}`}>Вы успешно забронировали!</p>
+        <p className={`message ${isOpen ? "message_opened" : ""}`}>Вы успешно забронировали переговорную!</p>
       </div>
     </div>
   );
