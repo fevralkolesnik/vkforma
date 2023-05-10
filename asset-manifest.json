@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vkforma/static/css/main.c93f7cda.css",
+    "main.js": "/vkforma/static/js/main.b1629fd6.js",
+    "static/js/787.82925d1f.chunk.js": "/vkforma/static/js/787.82925d1f.chunk.js",
+    "index.html": "/vkforma/index.html",
+    "main.c93f7cda.css.map": "/vkforma/static/css/main.c93f7cda.css.map",
+    "main.b1629fd6.js.map": "/vkforma/static/js/main.b1629fd6.js.map",
+    "787.82925d1f.chunk.js.map": "/vkforma/static/js/787.82925d1f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c93f7cda.css",
+    "static/js/main.b1629fd6.js"
+  ]
+}
