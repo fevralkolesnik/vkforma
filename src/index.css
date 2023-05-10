@@ -96,3 +96,19 @@
   opacity: 0.8;
   cursor: pointer;
 }
+
+.message {
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0e6eed;
+}
+
+.message_opened {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0e6eed;
+  display: inline;
+}

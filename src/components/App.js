@@ -9,6 +9,7 @@ function App() {
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
   const [comment, setComment] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   let floors = [];
   let rooms = [];
@@ -43,6 +44,7 @@ function App() {
     setStartDate();
     setEndDate();
     setComment("");
+    setIsOpen(true);
   }
 
   function handleReset(e) {
@@ -54,6 +56,7 @@ function App() {
     setStartDate();
     setEndDate();
     setComment("");
+    setIsOpen(false);
   }
 
   return (
@@ -144,6 +147,7 @@ function App() {
             Очистить форму
           </button>
         </form>
+        <p className={`message ${isOpen ? "message_opened" : ""}`}>Вы успешно зарегестрировались!</p>
       </div>
     </div>
   );
