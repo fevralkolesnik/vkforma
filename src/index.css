@@ -17,7 +17,7 @@
 }
 
 .container {
-  max-width: 430px;
+  max-width: 500px;
   width: 100%;
   min-height: 330px;
 
@@ -49,6 +49,10 @@
 
   margin-bottom: 30px;
 }
+
+.form-field__date {
+  flex-direction: row;
+}
 .input {
   width: 100%;
   min-height: 30px;
@@ -60,6 +64,15 @@
   font-size: 14px;
   line-height: 17px;
   color: #070707;
+}
+.input__date {
+  width: 70%;
+}
+.title_date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0e6eed;
 }
 
 .button {

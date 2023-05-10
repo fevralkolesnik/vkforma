@@ -7,7 +7,8 @@ function App() {
     const [tower, setTower] = useState('');
     const [floor, setFloor] = useState('');
     const [room, setRoom] = useState('');
-    const [startDate, setDate] = useState(new Date());
+    const [startDate, setStartDate] = useState();
+    const [endDate, setEndDate] = useState();
     const [comment, setComment] = useState('');
 
     let floors = [];
@@ -36,7 +37,8 @@ function App() {
       setTower('');
       setFloor('');
       setRoom('');
-      setDate(new Date());
+      setStartDate();
+      setEndDate();
       setComment('');
     }
 
@@ -46,7 +48,8 @@ function App() {
       setTower('');
       setFloor('');
       setRoom('');
-      setDate(new Date());
+      setStartDate();
+      setEndDate();
       setComment('');
     }
 
@@ -85,8 +88,10 @@ function App() {
                     {optionsRoom}
                 </select>
             </label>
-            <label className="form-field">
-                <DatePicker className="input" selected={startDate} showTimeSelect required onChange={(date) => setDate(date)} />
+            <p className='title_date'>Забронируйте время переговорной:</p>
+            <label className="form-field form-field__date">
+                <DatePicker className="input input__date" dateFormat="MMMM d, yyyy h:mm aa" selected={startDate} showTimeSelect required onChange={(date) => setStartDate(date)} />
+                <DatePicker className="input input__date" dateFormat="MMMM d, yyyy h:mm aa" selected={endDate} showTimeSelect required onChange={(date) => setEndDate(date)} />
             </label>    
             
             <label className="form-field">
@@ -95,7 +100,6 @@ function App() {
                 type="text"
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
-                required
                 placeholder="Оставьте комментарий..."
                 />
             </label>
